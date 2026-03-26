@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Phúc Thành - Curriculum Vitae</title>
+    <!-- Thêm font chữ hiện đại từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-color: #3b82f6;
+            --card-bg: #1e293b;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: var(--card-bg);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-bottom: 1px solid #334155;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            margin: 0.5rem 0 0;
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+        .cv-container {
+            width: 100%;
+            max-width: 1000px;
+            height: 80vh;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+            border: 1px solid #334155;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cv-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 30px -5px rgb(0 0 0 / 0.4), 0 10px 15px -6px rgb(0 0 0 / 0.4);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: #64748b;
+            font-size: 0.875rem;
+            background-color: var(--card-bg);
+            border-top: 1px solid #334155;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                padding: 1rem;
+            }
+            .cv-container {
+                height: 85vh;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio - Trần Phúc Thành</h1>
+        <p class="subtitle">Curriculum Vitae</p>
+    </header>
+    
+    <main>
+        <div class="cv-container">
+            <iframe src="CV_TranPhucThanh.pdf#toolbar=0" title="CV Trần Phúc Thành" loading="lazy">
+                <p>Opps, trình duyệt của bạn không hỗ trợ xem trực tiếp PDF. <a href="CV_TranPhucThanh.pdf" target="_blank">Nhấp vào đây để tải về!</a></p>
+            </iframe>
+        </div>
+    </main>
+    
+    <footer>
+        &copy; 2026 Trần Phúc Thành. All Rights Reserved. Crafted with clean architecture & nice UI ❤️.
+    </footer>
+</body>
+</html>
